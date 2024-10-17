@@ -1,0 +1,226 @@
+/* Title Style */
+.feature-2-map-slider-title {
+  font-size: 2em;
+  color: #333;
+  padding: 10px 0;
+  text-align: center;
+  margin: 0;
+}
+
+/* Description Style */
+.feature-2-map-slider-description {
+  font-size: 1.2em;
+  color: #113300;
+  padding: 10px 0;
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+
+/* Map Container */
+#map-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Map and Toggles Wrapper for phonescreen */
+.map-toggle-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 900px;
+}
+
+/* Toggle Container */
+.toggle-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 80%;
+  height: 80%;
+  max-width: 800px;
+  margin-bottom: 10px;
+  margin-left: 40px;
+}
+
+/* Toggle Item */
+.toggle-item {
+  display: flex;
+  align-items: center;
+  margin: 5 10px;
+  padding: 10px;
+}
+
+/* Map */
+#map {
+  flex-grow: 1;
+  width: 100%;
+  height: 400px;
+  position: relative;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* Big Text Container */
+.big-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #01470e;
+  font-weight: bold;
+  text-align: justify;
+}
+
+/* Big Number Container */
+.big-number-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Big Number Style */
+.big-number {
+  font-size: 150px;
+  font-weight: bold;
+  color: #00a61e;
+  line-height: 1;
+  margin-right: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+/* Tree Icon */
+.tree-icon {
+  width: 70px;
+}
+
+/* For larger screens (like PCs) */
+@media (min-width: 800px) {
+  #map {
+    height: 600px;
+  }
+  
+  #map-container {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 100px;
+  }
+
+  .map-toggle-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 900px;
+  }
+
+  .toggle-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+
+  /* Big Text container to the right */
+  .big-text-container {
+    align-items: flex-start;
+    text-align: left;
+    margin-left: 20px;
+  }
+
+  /* Big Text */
+  .big-text {
+    font-size: 20px;
+    max-width: 300px;
+  }
+}
+
+/* Source Text */
+.source-text {
+  font-size: 0.9em;
+  color: #444;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Toggle Switch */
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Toggle Label */
+.toggle-label {
+  margin-left: 10px;
+  font-size: 1em;
+  color: #666;
+}
+
+/* Slider Styles */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+/* Slider Circle */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+}
+
+/* Checked State of Slider */
+input:checked + .slider {
+  background-color: #008113;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Dark Mode Styles */
+body.dark-mode .feature-2-map-slider-title {
+  color: #e0e0e0;
+}
+
+body.dark-mode .feature-2-map-slider-description {
+  color: #a0d6a0;
+}
+
+body.dark-mode #map {
+  border: 2px solid #444;
+}
+
+body.dark-mode .source-text {
+  color: #bbb;
+}
+
+body.dark-mode .toggle-label {
+  color: #ccc;
+}

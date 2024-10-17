@@ -27,6 +27,7 @@ This file implements the interactive elements for the different map features lik
 
 ### 2.5 Feature 2 CSS ("feature-2-map-slider.css")
 
+This file has the styling of the map features & texts.
 
 ### 2.6 Images ("assets/images")
 
